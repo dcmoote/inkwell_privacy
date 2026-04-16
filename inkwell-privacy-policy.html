@@ -139,7 +139,7 @@
     <div class="wordmark">Inkwell</div>
     <h1>Privacy Policy</h1>
     <div class="rule"></div>
-    <p class="meta">Effective date: March 26, 2026 &nbsp;·&nbsp; Last updated: March 26, 2026</p>
+    <p class="meta">Effective date: March 26, 2026 &nbsp;·&nbsp; Last updated: April 16, 2026</p>
   </header>
 
   <main>
@@ -158,12 +158,6 @@
         <li>Prompts you mark as favorites</li>
         <li>In-app purchase records (processed by Google Play — we do not handle payment details directly)</li>
       </ul>
-      <p><strong>Information collected automatically:</strong></p>
-      <ul>
-        <li>Basic app usage data (e.g., which screens you visit, whether a prompt was generated) used to improve the experience</li>
-        <li>Crash reports and diagnostic information if the app encounters an error</li>
-        <li>Device type and operating system version, for compatibility purposes</li>
-      </ul>
       <p>We do not collect your name, email address, or any account credentials unless you explicitly provide them for support purposes.</p>
     </section>
 
@@ -174,15 +168,13 @@
         <li>To save your prompt history and favorites locally on your device</li>
         <li>To power AI-generated prompts for Inkwell Pro subscribers</li>
         <li>To send daily push notifications (only if you grant permission)</li>
-        <li>To diagnose crashes and improve app stability</li>
-        <li>To understand how features are used at an aggregate, anonymous level</li>
       </ul>
       <p>We do not sell your data. We do not use your data for advertising.</p>
     </section>
 
     <section>
       <h2>AI-Powered Prompts (Inkwell Pro)</h2>
-      <p>If you subscribe to Inkwell Pro, your creative preferences (type, genres, mediums, and themes) are sent to an AI model to generate personalized prompts. This data is transmitted securely and is used solely to generate your prompt. It is not stored by the AI provider beyond the scope of a single request, in accordance with our agreement with that provider.</p>
+      <p>If you subscribe to Inkwell Pro, your creative preferences (type, genres, mediums, and themes) are sent to an AI model to generate personalized prompts. Requests are routed through a Cloudflare Worker to the Anthropic API. This data is transmitted securely and is used solely to generate your prompt.</p>
       <p>No personally identifying information is included in AI requests — only your creative preferences.</p>
     </section>
 
@@ -194,11 +186,10 @@
 
     <section>
       <h2>Third-Party Services</h2>
-      <p>Inkwell uses the following third-party services, each with their own privacy policies:</p>
+      <p>Inkwell uses the following third-party service:</p>
       <ul>
         <li><strong>Google Play Billing</strong> — handles all in-app purchase transactions. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
-        <li><strong>Android crash reporting</strong> — we may use Firebase Crashlytics or a similar service to capture crash diagnostics. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase's Privacy Policy</a>.</li>
-        <li><strong>AI prompt generation (Pro only)</strong> — creative preferences are sent to an AI provider to generate prompts. No identifying data is included in these requests.</li>
+        <li><strong>Anthropic (via Cloudflare Worker)</strong> — Pro subscribers' creative preferences are sent to the Anthropic API to generate prompts. No identifying information is included. See <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Anthropic's Privacy Policy</a>.</li>
       </ul>
     </section>
 
@@ -214,11 +205,10 @@
 
     <section>
       <h2>Your Rights and Choices</h2>
-      <p>Because most data is stored locally on your device, you have full control over it:</p>
+      <p>Because all data is stored locally on your device, you have full control over it:</p>
       <ul>
         <li><strong>Delete your data:</strong> Uninstall the app to remove all locally stored preferences and history.</li>
         <li><strong>Notification preferences:</strong> Manage through your device's Settings app.</li>
-        <li><strong>Opt out of analytics:</strong> You can contact us to request exclusion from any analytics tracking.</li>
       </ul>
       <p>If you are located in the European Economic Area (EEA), United Kingdom, or California, you may have additional rights under GDPR or CCPA. Please contact us to exercise those rights.</p>
     </section>
@@ -233,7 +223,7 @@
       <p>If you have questions, concerns, or requests related to this Privacy Policy, please reach out:</p>
       <div class="contact-block">
         <p><strong>Inkwell</strong></p>
-        <p>Email: <a href="mailto:privacy@inkwellapp.com">privacy@inkwellapp.com</a></p>
+        <p>Email: <a href="mailto:kindling.studio.apps@gmail.com">kindling.studio.apps@gmail.com</a></p>
         <p>Location: Utah, United States</p>
       </div>
     </section>
